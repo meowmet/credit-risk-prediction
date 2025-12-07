@@ -1,0 +1,39 @@
+{
+  "day": 4,
+  "dataset": "credit_500k",
+  "fe_version": "advanced_v3",
+  "model_type": "random_forest",
+  
+  "default_threshold_metrics": {
+    "thr": 0.5,
+    "auc": 0.7601294054669127,
+    "logloss": 0.4411136860751432,
+    "f1": 0.40990540147870724,
+    "precision": 0.5862578500184706,
+    "recall": 0.3151154132539092,
+    "tn": 152553,
+    "fp": 8960,
+    "fn": 27594,
+    "tp": 12696
+  },
+
+  "best_f1_threshold_metrics": {
+    "best_thr": 0.36,
+    "auc": 0.7601294054669127,
+    "logloss": 0.4411136860751432,
+    "f1_at_best_thr": 0.47429266181713275,
+    "precision": 0.40546825452751745,
+    "recall": 0.5712583767684289,
+    "tn": 127765,
+    "fp": 33748,
+    "fn": 17274,
+    "tp": 23016
+  },
+
+  "model_file_size_mb": 209,
+  "n_features_final": 83,
+  "n_train_used": 300000,
+  "shap_sample_size": 1000,
+
+  "notes": "Advanced feature engineering + univariate feature selection improved RF performance. AUC reached ~0.760, best F1 ~0.474 at thr=0.36. SHAP computed on 1000-row sample."
+}
